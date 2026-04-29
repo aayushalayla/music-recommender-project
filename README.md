@@ -684,3 +684,28 @@ Example evaluation result:
 4 out of 4 tests passed.
 Average confidence score: 0.55.
 The system performed well on specific prompts such as “dreamy sad songs for studying” and “chaotic workout music.” It correctly rejected vague or empty prompts instead of generating unsupported recommendations.
+
+## Optional Stretch Features Completed
+
+This project implements all four optional stretch features.
+
+### 1. RAG Enhancement
+
+The recommender uses multi-source retrieval. It retrieves from `data/songs.csv` and also from `data/listening_contexts.csv`, which provides listening-context guidance for situations like studying, workouts, night walks, parties, and reflection. The system measures this enhancement by comparing baseline song-only retrieval with enhanced multi-source retrieval.
+
+### 2. Agentic Workflow Enhancement
+
+The app includes an observable agent trace. For each user request, the system validates the input, retrieves songs and context guidance, compares baseline and enhanced retrieval, generates recommendations, validates the output, and calculates confidence. These intermediate steps are visible in the Streamlit interface under “Agent Trace.”
+
+### 3. Fine-Tuning or Specialization
+
+Instead of fine-tuning a model, the project demonstrates specialized model behavior through constrained style profiles: Plain, Music Critic, Study Companion, and DJ. The system compares baseline explanations against specialized explanations and shows whether the output changed in wording, length, and emphasis.
+
+### 4. Test Harness / Evaluation Script
+
+The project includes `scripts/evaluate_system.py`, which runs predefined inputs through the system and prints pass/fail results, confidence scores, recommendations, agent trace steps, RAG comparison results, and specialization checks.
+
+1. RAG Enhancement — multi-source retrieval from songs.csv + listening_contexts.csv
+2. Agentic Workflow — visible Agent Trace in Streamlit
+3. Specialization — style profiles: Plain, Music Critic, Study Companion, DJ
+4. Test Harness — scripts/evaluate_system.py
