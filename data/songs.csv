@@ -1,21 +1,11 @@
-id,title,artist,genre,mood,energy,tempo_bpm,valence,danceability,acousticness,popularity,release_decade,sub_mood,language,liveness
-1,Sunrise City,Neon Echo,pop,happy,0.82,118,0.84,0.79,0.18,78,2020,euphoric,english,0.12
-2,Midnight Coding,LoRoom,lofi,chill,0.42,78,0.56,0.62,0.71,55,2020,dreamy,english,0.08
-3,Storm Runner,Voltline,rock,intense,0.91,152,0.48,0.66,0.10,82,2010,aggressive,english,0.25
-4,Library Rain,Paper Lanterns,lofi,chill,0.35,72,0.60,0.58,0.86,48,2020,peaceful,english,0.07
-5,Gym Hero,Max Pulse,pop,intense,0.93,132,0.77,0.88,0.05,88,2020,pumped,english,0.15
-6,Spacewalk Thoughts,Orbit Bloom,ambient,chill,0.28,60,0.65,0.41,0.92,42,2010,meditative,english,0.05
-7,Coffee Shop Stories,Slow Stereo,jazz,relaxed,0.37,90,0.71,0.54,0.89,61,2010,romantic,english,0.35
-8,Night Drive Loop,Neon Echo,synthwave,moody,0.75,110,0.49,0.73,0.22,74,2020,nostalgic,english,0.10
-9,Focus Flow,LoRoom,lofi,focused,0.40,80,0.59,0.60,0.78,52,2020,meditative,english,0.06
-10,Rooftop Lights,Indigo Parade,indie pop,happy,0.76,124,0.81,0.82,0.35,70,2020,euphoric,english,0.20
-11,Midnight Blues,Soul Echo,soul,melancholic,0.35,85,0.42,0.52,0.88,58,2000,melancholic,english,0.45
-12,Electric Dreams,Sync Wave,electronic,energetic,0.95,128,0.82,0.91,0.08,85,2020,euphoric,english,0.10
-13,Country Roads,Dusty Trail,country,nostalgic,0.58,100,0.68,0.60,0.85,65,2000,nostalgic,english,0.55
-14,Urban Rhythm,Beat Masters,hip-hop,confident,0.78,95,0.72,0.82,0.15,79,2020,confident,english,0.18
-15,Moonlit Sonata,Classical Notes,classical,dreamy,0.22,60,0.65,0.25,0.98,38,2010,meditative,english,0.30
-16,Thunder Strike,Heavy Sound,metal,aggressive,0.97,160,0.38,0.45,0.02,72,2010,aggressive,english,0.60
-17,Sunset Groove,Reggae Vibes,reggae,laid-back,0.52,92,0.75,0.68,0.72,63,2010,peaceful,english,0.40
-18,Broken Dreams,Indie Hearts,indie rock,melancholic,0.68,110,0.48,0.58,0.55,66,2010,melancholic,english,0.22
-19,Whispered Pines,Folk Singer,folk,peaceful,0.38,75,0.60,0.40,0.92,44,2010,peaceful,english,0.68
-20,Melancholic Waves,Deep House Collective,deep house,atmospheric,0.48,104,0.55,0.65,0.12,51,2020,atmospheric,english,0.12
+title,artist,mood,genre,activity,energy
+Space Song,Beach House,dreamy sad calm,indie,studying walking,medium
+Moon Song,Phoebe Bridgers,sad soft reflective,indie,studying crying walking,low
+Fourth of July,Sufjan Stevens,sad quiet emotional,folk indie,studying reflection,low
+212,Azealia Banks,chaotic energetic aggressive,rap electronic,workout party,high
+Heads Will Roll,Yeah Yeah Yeahs,energetic dark dance,rock electronic,workout party,high
+B.O.B.,OutKast,chaotic fast energetic,rap,workout running,high
+Hard Times,Paramore,bright anxious energetic,pop rock,walking cleaning,high
+Motion Sickness,Phoebe Bridgers,bitter sad reflective,indie,walking journaling,medium
+Midnight City,M83,dreamy energetic neon,electronic,night walking,high
+Eventually,Tame Impala,psychedelic sad dreamy,indie rock,reflection walking,medium
