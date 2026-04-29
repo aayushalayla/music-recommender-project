@@ -673,3 +673,14 @@ The `/assets` folder contains the architecture diagram.
 ```bash
 git clone https://github.com/aayushalayla/music-recommender-project.git
 cd music-recommender-project
+
+### Evaluation Script
+
+I added a test harness in `scripts/evaluate_system.py`. The script runs the recommender on predefined inputs, checks whether guardrails behave correctly, verifies that recommendations come from retrieved songs, and prints pass/fail results with confidence scores.
+
+Example evaluation result:
+
+```text
+4 out of 4 tests passed.
+Average confidence score: 0.55.
+The system performed well on specific prompts such as “dreamy sad songs for studying” and “chaotic workout music.” It correctly rejected vague or empty prompts instead of generating unsupported recommendations.
