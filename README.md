@@ -643,3 +643,33 @@ for rank, rec in enumerate(recommendations, 1):
 | **Acoustic Preference Unused** | `likes_acoustic` field in UserProfile is not factored into scoring. | A user who loves acoustic music gets no bonus for acoustic songs; acoustic-heavy songs never break into top 5. | User preference data is collected but ignored. |
 | **Cold Start Problem** | New users must manually set favorite_genre, favorite_mood, target_energy. No behavioral history to infer preferences. | Brand new user picks "pop + happy + 0.5 energy" on day 1, but these might not reflect their true taste. | First recommendations are likely to be wrong. |
 | **Catalog Size Bias** | With only 18 songs, genre distribution matters heavily. If most songs are "pop," pop lovers are over-served. | Dataset likely has imbalanced genre distribution (more pop/lofi than metal/classical). | Recommendations reflect catalog bias, not true user preference. |
+
+# AI Music Recommender System
+
+## Original Project
+
+This project evolved from my Module 3 music recommender simulation. The original version explored how AI could suggest music based on user preferences such as mood, genre, or listening context. It functioned mainly as a basic recommendation prototype rather than a full applied AI system.
+
+## Project Summary
+
+This upgraded system is a context-aware AI music recommender. A user enters a listening request, such as a mood, activity, or genre preference, and the system retrieves relevant songs from a local music dataset before generating recommendations. The goal is to make recommendations more grounded, explainable, and testable.
+
+## AI Feature: Retrieval-Augmented Generation
+
+The system uses a retrieval step before generating recommendations. Instead of inventing suggestions from nowhere, it searches a local song dataset for tracks that match the user’s request. The recommendation generator then uses those retrieved songs as context when producing its final answer.
+
+## Architecture Overview
+
+The system follows this flow:
+
+User input → guardrails → retriever → song dataset → recommendation generator → confidence scoring → output + logs.
+
+The `/assets` folder contains the architecture diagram.
+
+## Setup Instructions
+
+1. Clone the repo:
+
+```bash
+git clone https://github.com/aayushalayla/music-recommender-project.git
+cd music-recommender-project
